@@ -18,3 +18,8 @@ def index():
     return render_template('index.html',
                            ids=ids,
                            figuresJSON=figuresJSON)
+
+
+@app.route('/data_info')
+def data_info():
+    return render_template('data_info.html')
